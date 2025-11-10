@@ -3,12 +3,13 @@
 * {
   margin: 0px;
   padding: 0px;
+  font-family: var(--primary-font);
 }
 html {
   scroll-behavior: smooth;
 }
 :root {
-  --main-color: cyan;
+  --main-color: rgb(255, 208, 127);
   --black-color: rgb(21, 21, 21);
   --white-color: white;
   --primary-font: "Poppins", sans-serif;
@@ -32,29 +33,13 @@ ol {
   margin: 0px;
   padding: 0px;
 }
+.arima {
+  font-family: "Arima", system-ui;
+  font-optical-sizing: auto;
 
-h1 {
-  font-size: 3rem;
-  font-weight: 900;
-  margin-bottom: 3rem;
+  font-style: normal;
 }
-h2 {
-  font-size: 2.25rem;
-  font-weight: 700;
-  text-transform: capitalize;
-  margin-bottom: 3rem;
-  line-height: 3rem;
-}
-h4 {
-  font-size: 18px;
-  font-weight: 800;
-  margin-bottom: 0.5rem;
-}
-h5 {
-  font-size: 1rem;
-  font-weight: 700;
-  margin-bottom: 0.5rem;
-}
+
 /* navbar header settings */
 .navbar-brand {
   padding: 0px;
@@ -68,7 +53,7 @@ h5 {
   z-index: 1000;
   -webkit-transition: all 0.3s ease-out;
   transition: all 0.3 ease-out;
-  background: rgba(65, 65, 65, 0.33);
+  background: rgba(33, 33, 33, 0.33);
   border-radius: 16px;
   box-shadow: 0 4px 30px rgba(193, 193, 193, 0.1);
   backdrop-filter: blur(5px);
@@ -104,10 +89,34 @@ h5 {
 
 /* top banner */
 .top-banner {
-  background: linear-gradient(transparent, transparent, black),
-    url("images/2151823127.jpg");
+  background: linear-gradient(transparent, black), url("images/2151823127.png");
   background-position: right 0%;
   background-size: cover;
   background-repeat: no-repeat;
+  padding-top: 5rem;
+  padding-bottom: 5rem;
   height: 100vh;
+}
+
+.card-wrapper {
+  display: flex;
+
+  gap: 1rem;
+}
+
+.card img {
+  width: 100%;
+  height: 15rem;
+  object-fit: cover;
+}
+/* media */
+@media only screen and (min-width: 0px) and (max-width: 750px) {
+  .top-banner {
+    height: 100%;
+  }
+  .card img {
+    width: 100%;
+    height: 10rem;
+    object-fit: cover;
+  }
 }
