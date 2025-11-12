@@ -100,11 +100,10 @@ ol {
 
 .card-wrapper {
   display: flex;
-
-  gap: 1rem;
 }
 .card {
   height: 20rem;
+  margin: 0 1rem;
   background: transparent !important;
 }
 .card img {
@@ -128,13 +127,25 @@ ol {
   font-size: 1.1rem;
   text-transform: capitalize;
 }
+.about_us_title {
+  font-size: 5rem;
+}
 /* media */
 @media only screen and (min-width: 0px) and (max-width: 750px) {
   .top-banner {
     height: 100%;
+    padding-bottom: 1.3rem;
+  }
+  .about_us_title {
+    font-size: 2.1rem;
+  }
+  .card-title {
+    font-size: 0.7rem;
   }
   .card {
     height: 13rem;
+
+    margin: 0 0.1rem;
     background: transparent !important;
   }
   .card img {
