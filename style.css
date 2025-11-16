@@ -89,7 +89,8 @@ ol {
 
 /* top banner */
 .top-banner {
-  background: linear-gradient(transparent, black), url("images/2151823127.png");
+  background: linear-gradient(transparent, black),
+    url("images/dayan-quinteros-Ko-g1ijT9NM-unsplash.jpg");
   background-position: right 0%;
   background-size: cover;
   background-repeat: no-repeat;
@@ -127,11 +128,19 @@ ol {
   font-size: 1.1rem;
   text-transform: capitalize;
 }
+
+/* about the trip */
 .about_us_title {
-  font-size: 5rem;
+  font-size: 4.1rem;
+}
+.trip-bio {
+  margin-top: 18rem !important;
 }
 /* media */
 @media only screen and (min-width: 0px) and (max-width: 750px) {
+  .trip-bio {
+    margin-top: 2rem !important;
+  }
   .top-banner {
     height: 100%;
     padding-bottom: 1.3rem;
