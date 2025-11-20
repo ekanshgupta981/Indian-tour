@@ -136,6 +136,98 @@ ol {
 .trip-bio {
   margin-top: 18rem !important;
 }
+
+/* btm bg */
+.btm-bg {
+  background: linear-gradient(to bottom, black 1%, transparent),
+    url("images/2151823127.jpg");
+  background-position: top;
+  background-size: cover;
+  background-repeat: no-repeat;
+  padding-top: 5rem;
+  padding-bottom: 5rem;
+}
+.glass-card {
+  background: rgba(255, 255, 255, 0.12);
+  backdrop-filter: blur(12px);
+  border-radius: 20px;
+  box-shadow: 0 8px 32px rgba(0, 0, 0, 0.28);
+  color: white;
+}
+
+/* Input styling */
+.input-line {
+  border: none !important;
+  border-bottom: 1px solid rgba(255, 255, 255, 0.4) !important;
+  border-radius: 0 !important;
+  padding-left: 0 !important;
+}
+::placeholder {
+  color: rgba(255, 255, 255, 0.85) !important;
+}
+
+.input-line:focus {
+  box-shadow: none !important;
+  border-bottom: 1px solid #fff !important;
+}
+
+/* Fix Bootstrap checkbox color */
+.form-check-input {
+  accent-color: white;
+}
+
+/* Mobile fixes */
+@media (max-width: 576px) {
+  .glass-card {
+    padding: 25px 20px !important;
+  }
+} /* Glass FAQ Box */
+.glass-faq {
+  background: rgba(255, 255, 255, 0.12);
+  backdrop-filter: blur(12px);
+  border-radius: 20px;
+  box-shadow: 0 8px 32px rgba(0, 0, 0, 0.28);
+}
+
+/* Each FAQ item */
+.glass-item {
+  background: transparent;
+  border: none;
+  margin-bottom: 10px;
+}
+
+/* Buttons (questions) */
+.glass-btn {
+  background: rgba(255, 255, 255, 0.1) !important;
+  color: #fff !important;
+  font-weight: 500;
+  border-radius: 10px;
+  backdrop-filter: blur(5px);
+}
+
+.glass-btn:not(.collapsed) {
+  background: rgba(255, 255, 255, 0.2) !important;
+  color: #fff !important;
+}
+
+/* Accordion icon color fix */
+.accordion-button::after {
+  filter: invert(1); /* makes arrow white */
+}
+
+/* Remove default borders */
+.accordion-button,
+.accordion-item {
+  border: none !important;
+}
+
+/* Responsive */
+@media (max-width: 576px) {
+  .glass-faq {
+    padding: 25px 20px !important;
+  }
+}
+
 /* media */
 @media only screen and (min-width: 0px) and (max-width: 750px) {
   .trip-bio {
